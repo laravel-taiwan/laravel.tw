@@ -178,7 +178,7 @@
 
 {% block method %}
     <h3 id="method_{{ method.name }}">
-        <div class="location">{% if method.class is not sameas(class) %}in {{ method_link(method, {}, false, true) }} {% endif %}at line {{ method.line }}</div>
+        <div class="location">{% if method.class is not sameas(class) %}in {{ method_link(method, {}, false, true) }} {% endif %}<a href="https://github.com/laravel/framework/blob/{{ project.version }}/src/{{ method.class.namespace }}/{{ method.class.shortname }}.php#L{{ method.line }}" target="_blank">at line {{ method.line }}</a></div>
         <code>{{ block('method_signature') }}</code>
     </h3>
     <div class="details">

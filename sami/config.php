@@ -12,9 +12,15 @@ $iterator = Finder::create()
     ->exclude('stubs')
     ->in($dir = __DIR__.'/laravel/src');
 
+$versions = GitVersionCollection::create($dir)
+    ->add('4.0', 'Laravel 4.0')
+    ->add('4.1', 'Laravel 4.1')
+    ->add('master', 'Laravel dev');
+
 return new Sami($iterator, array(
     'title'                => 'Laravel API',
-    'build_dir'            => __DIR__.'/build',
-    'cache_dir'            => __DIR__.'/cache',
+    'versions'             => $versions,
+    'build_dir'            => __DIR__.'/build/%version%',
+    'cache_dir'            => __DIR__.'/cache/%version%',
     'default_opened_level' => 2,
 ));
