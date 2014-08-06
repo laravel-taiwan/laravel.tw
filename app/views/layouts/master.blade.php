@@ -14,7 +14,7 @@
 
     <link rel="shortcut icon" href="/favicon.png?v=2">
 
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
 
     <!-- fonts -->
     <script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n6,i6,n7,i7.js"></script>

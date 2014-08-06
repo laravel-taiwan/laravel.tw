@@ -19,7 +19,7 @@ function onError()
 // CSS
 gulp.task('styles', function() {
 	return gulp.src([
-		'source/scss/style.scss',
+		'source/scss/styles.scss',
 		'source/scss/ie.scss'
 		])
 		.pipe(plumber({
