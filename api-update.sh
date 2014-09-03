@@ -1,19 +1,19 @@
 #!/bin/bash
 
-cd /var/www/laravel.com/sami
+cd /home/Sites/laravel.tw/sami
 
-rm -rf /var/www/laravel.com/sami/build
-rm -rf /var/www/laravel.com/sami/cache
+rm -rf /home/Sites/laravel.tw/sami/build
+rm -rf /home/Sites/laravel.tw/sami/cache
 
 # Run API Docs
-git clone https://github.com/laravel/framework.git /var/www/laravel.com/sami/laravel
+git clone https://github.com/laravel/framework.git /home/Sites/laravel.tw/sami/laravel
 
-php /var/www/laravel.com/sami/sami.php update /var/www/laravel.com/sami/config.php
+php /home/Sites/laravel.tw/sami/sami.php update /home/Sites/laravel.tw/sami/config.php
 
-cp -r /var/www/laravel.com/sami/build/* /var/www/laravel.com/public/api
+cp -r /home/Sites/laravel.tw/sami/build/* /home/Sites/laravel.tw/public/api
 
-rm -rf /var/www/laravel.com/sami/build
-rm -rf /var/www/laravel.com/sami/cache
+rm -rf /home/Sites/laravel.tw/sami/build
+rm -rf /home/Sites/laravel.tw/sami/cache
 
 # Cleanup
-rm -rf /var/www/laravel.com/sami/laravel
+rm -rf /home/Sites/laravel.tw/sami/laravel
