@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Laravel - The PHP framework for web artisans.</title>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
@@ -60,7 +60,8 @@
                 Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
                 Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
                 Website built with &hearts; <a href="//ikreativ.com" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
-                responsive by <a href="//tighten.co" title="Tighten Co." target="_blank">Tighten Co.</a>
+                responsive by <a href="//tighten.co" title="Tighten Co." target="_blank">Tighten Co.</a><br class="br-mobile--footer">
+                translate by <a href="//laravel.tw" title="Laravel Taiwan" target="_blank">Laravel Taiwan Community</a>
             </div>
         </div>
     </section>
