@@ -1,9 +1,9 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="zh">
 
 <head>
-    <title>Laravel - The PHP framework for web artisans.</title>
+    <title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
@@ -30,7 +30,7 @@
 
     @if (App::environment() == 'production')
     <script>
-        var _gaq=[['_setAccount','UA-23865777-1'],['_trackPageview']];
+        var _gaq=[['_setAccount','UA-54753797-1'],['_trackPageview']];
         (function(d,t){
             var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
@@ -61,7 +61,8 @@
                 Laravel is a trademark of Taylor Otwell.<br class="br-mobile--footer">
                 Copyright &copy; <a href="http://twitter.com/taylorotwell" title="Taylor Otwell" target="_blank">Taylor Otwell</a>.<br class="br-mobile--footer">
                 Website built with &hearts; <a href="//ikreativ.com" title="iKreativ" target="_blank">iKreativ</a>;<br class="br-mobile--footer">
-                responsive by <a href="//tighten.co" title="Tighten Co." target="_blank">Tighten Co.</a>
+                responsive by <a href="//tighten.co" title="Tighten Co." target="_blank">Tighten Co.</a>;<br class="br-mobile--footer">
+                translate by <a href="//laravel.tw" title="Laravel Taiwan" target="_blank">Laravel Taiwan</a>
             </div>
         </div>
     </section>
