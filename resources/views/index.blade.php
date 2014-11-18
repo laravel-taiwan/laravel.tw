@@ -30,11 +30,20 @@
         <ul class="primary-nav-ul">
             <li class="current-item"><a href="#">歡迎</a></li>
             <li><a href="/docs" title="Documentation">文件</a></li>
-            <li><a href="https://forge.laravel.com">Forge</a></li>
-            <li><a href="http://laracasts.com">Laracasts</a></li>
             <li><a href="{{ url('api') }}/{{ DEFAULT_VERSION }}" title="Laravel Framework API">API</a></li>
+            <li><a href="http://laracasts.com" title="Documentation">Laracasts</a></li>
+            <li><a href="https://forge.laravel.com">Forge</a></li>
+            <li><a href="http://blog.laravel.com">Blog</a></li>
+            <li class="community">
+              <a href="#" title="Laravel Community Resources">Community</a>
+              <ul>
             <li><a href="//github.com/laravel/laravel" title="Github">Github</a></li>
             <li><a href="//twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+                <li><a href="https://laracasts.com/discuss">Laracasts Forums</a></li>
+                <li><a href="http://laravel.io/forum">Laravel.io Forums</a></li>
+                <li><a href="http://larajobs.com?partner=5">LaraJobs</a></li>
+              </ul>
+            </li>
         </ul>
         <a href="#" class="show-primary-nav">選單</a>
     </div>
@@ -117,10 +126,9 @@
                 <li class="current-item"><a href="#">歡迎</a></li>
                 <li><a href="/docs" title="Documentation">文件</a></li>
                 <li><a href="{{ url('api') }}/{{ DEFAULT_VERSION }}" title="Laravel Framework API">API</a></li>
-                <li><a href="http://laracasts.com">Laracasts</a></li>
-                <li><a href="https://forge.laravel.tw">Forge</a></li>
-                <li><a href="//github.com/laravel/laravel" title="Github">Github</a></li>
-                <li><a href="//twitter.com/laravelphp" title="Laravel on Twitter">Twitter</a></li>
+              <li><a href="http://laracasts.com" title="Documentation">Laracasts</a></li>
+              <li><a href="https://forge.laravel.com">Forge</a></li>
+              <li><a href="http://blog.laravel.com">Blog</a></li>
             </ul>
         </nav>
 
