@@ -22,7 +22,7 @@ home
 
 <section class="panel statement light">
 	<div class="content">
-		<h1>喜歡乾淨又簡潔的程式碼嗎？我們做到了。</h1>
+		<h1>喜歡簡潔乾淨的程式碼？我們做到了。</h1>
 		<p>為網頁藝術家創造的 PHP 框架</p>
 		<div class='browser-window'>
 			<div class='top-bar'>
@@ -58,19 +58,19 @@ class Idea extends Eloquent {
 		</div>
 	</div>
 	<a href="#features" class="next-up">
-		Powerful, Modern Features
+		強大，現代化的功能
 		<img src="/assets/img/down-arrow.png">
 	</a>
 </section>
 
 <section class="panel features dark" id="features">
-	<h1>Did someone say rapid?</h1>
-	<p>Elegant applications delivered at warp speed.</p>
+	<h1>速度很快嗎？</h1>
+	<p>傳遞優雅的應用程式只需要一瞬間</p>
 		<div class="blocks stacked">
 			<div class="block odd">
 				<div class="text">
-					<h2>Expressive, beautiful syntax.</h2>
-					<p>Value elegance, simplicity, and readability? You’ll fit right in. Laravel is designed for people just like you. If you need help getting started, check out <a href="https://laracasts.com">Laracasts</a> and our <a href="/docs">great documentation</a>.</p>
+					<h2>簡潔明瞭，優美的語法。</h2>
+					<p>想要程式優雅、簡約，且易讀？或許你將完美契合於此，因為 Laravel 專門設計給如同你一樣人們。如果你需要任何入門的幫助，請查閱 <a href="https://laracasts.com">Laracasts</a> 以及我們 <a href="/docs">優秀的文件</a>。</p>
 				</div>
 				<div class="media">
 
@@ -104,8 +104,8 @@ class Purchase implements ShouldQueue {
 			</div><!-- /.block -->
 			<div class="block even">
 				<div class="text">
-					<h2>Tailored for your team.</h2>
-					<p>Whether you're a solo developer or a 20 person team, Laravel is a breath of fresh air. Keep everyone in sync using Laravel's database agnostic <a href="/docs/migrations">migrations</a> and <a href="/docs/migrations">schema builder</a>.</p>
+					<h2>為了你的團隊量身打造。</h2>
+					<p>無論你是獨自開發還是二十人的團隊，Laravel 讓你耳目一新。使用<a href="/docs/migrations">遷移</a>以及<a href="/docs/schema">結構生成器</a>讓每個人都同步使用 Laravel 的資料庫。</p>
 				</div>
 				<div class="media">
 					<div class="terminal-window">
@@ -128,8 +128,8 @@ Migrated: 2015_01_13_162508_create_servers_table
 			</div><!-- /.block -->
 			<div class="block odd">
 				<div class="text">
-					<h2>Modern toolkit. Pinch of magic.</h2>
-					<p>An <a href="/docs/eloquent">amazing ORM</a>, painless <a href="/docs/routing">routing</a>, powerful <a href="/docs/queues">queue library</a>, and <a href="/docs/authentication">simple authentication</a> give you the tools you need for modern, maintainable PHP. We sweat the small stuff to help you deliver amazing applications.
+					<h2>現代化的工具組，彷彿施展魔術。</h2>
+					<p>透過<a href="/docs/eloquent">驚豔的 ORM</a>、輕鬆上手的<a href="/docs/routing">路由</a>、強大的<a href="/docs/queues">隊列函式庫</a>，以及<a href="/docs/authentication">易用的認證</a>，這些工具讓您的 PHP 現代化且易維護。我們用盡全力打造這些小東西，只為了幫助您打造驚人的應用程式。</p>
 				</div>
 				<div class="media">
 
@@ -158,14 +158,14 @@ Route::get('/user/{user}', function(App\User $user)
 			</div><!-- /.block -->
 		</div>
 		<a href="#ecosystem" class="next-up">
-			The Laravel Ecosystem
+			Laravel 生態系統
 			<img src="/assets/img/down-arrow.png">
 		</a>
 	</section>
 
 	<section class="panel ecosystem light" id="ecosystem">
-		<h1>The Laravel Ecosystem</h1>
-		<p>Revolutionize how you build the web.</p>
+		<h1>Laravel 生態系統</h1>
+		<p>徹底改變您建立網站的方式。</p>
 
 		<div class="forge contain">
 			<img src="/assets/img/forge-macbook.png" alt="Forge Dashboard" class="screenshot">
@@ -173,22 +173,22 @@ Route::get('/user/{user}', function(App\User $user)
 				<a href="https://forge.laravel.com">
 					<img src="/assets/img/forge-logo.png" alt="Forge">
 				</a>
-				<p>Instant PHP Platforms On Linode, DigitalOcean, and more. Push to deploy, PHP 5.6, HHVM, queues, and everything you need to launch and deploy amazing Laravel applications.</p>
-				<p>Launch your application in minutes!</p>
+				<p>瞬間將 PHP 發佈在 Linode、DigitalOcean 或其他平台上。一次擁有 Push 後直接部署、PHP 5.6、HHVM、隊列，以及任何您打造驚人之應用程式所需的東西。</p>
+				<p>在幾分鐘內啟動你的應用程式！</p>
 			</div>
 		</div>
 		<div class="tiles">
 			<div class="tile">
 				<h2><a href="/docs/homestead">Homestead</a></h2>
-				<p>The official Laravel local development environment. Powered by Vagrant, Homestead gets your entire team on the same page with the latest PHP, MySQL, Postgres, Redis, and more.</p>
+				<p>官方 Laravel 的本機開發環境。由 Vagrant 技術支援，使用 Homestead 讓你的整個團隊同步使用最新版本的 PHP、MySQL、Postgres、Redis 等等。</p>
 			</div>
 			<div class="tile">
 				<h2><a href="https://laracasts.com">Laracasts</a></h2>
-				<p>Hundreds (yes, hundreds) of Laravel and PHP video tutorials with new videos added every week! Skim the basics or start your journey to Laravel mastery. All for the price of lunch.</p>
+				<p>數百部（是的你沒看錯，數百部）的 Laravel 及 PHP 影片教學，而且每週都會有新的影片加入！您可以瀏覽基礎的部分，或是開始精通 Laravel 的旅程。價格就如同你所有的午餐價格。</p>
 			</div>
 			<div class="tile">
 				<h2>Power Packed</h2>
-				<p>Laravel is amazing out of the box, but there's more to explore! Let <a href="/docs/billing">Cashier</a> make subscription billing painless, or use <a href="/docs/authentication#social-authentication">Socialite</a> to authenticate with Facebook, Twitter, and more.</p>
+				<p>雖然 Laravel 相當驚人，隨開即用，但是還有更多值得探索的功能！例如使用<a href="/docs/billing">交易</a>讓你在處理訂閱計費的問題幾乎輕而易舉，或是使用<a href="/docs/authentication#social-authentication">社群驗證</a> 來驗證Facebook、Twitter，以及其他的社群帳號。</p>
 			</div>
 		</div>
 	</section>
