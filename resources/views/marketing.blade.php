@@ -22,8 +22,8 @@ home
 
 <section class="panel statement light">
 	<div class="content">
-		<h1>Love beautiful code? We do too.</h1>
-		<p>The PHP Framework For Web Artisans</p>
+		<h1>喜歡乾淨又簡潔的程式碼嗎？我們做到了。</h1>
+		<p>為網頁藝術家創造的 PHP 框架</p>
 		<div class='browser-window'>
 			<div class='top-bar'>
 				<div class='circles'>
