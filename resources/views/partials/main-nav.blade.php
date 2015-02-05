@@ -1,4 +1,4 @@
-<li class="nav-docs"><a href="/docs">Documentation</a></li>
+<li class="nav-docs"><a href="/docs">文件</a></li>
 <li class="nav-laracasts"><a href="https://laracasts.com">Laracasts</a></li>
 <li class="nav-forge"><a href="https://forge.laravel.com">Forge</a></li>
 <li class="nav-api"><a href="/api">API</a></li>
