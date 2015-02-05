@@ -2,7 +2,7 @@
 
 @section('content')
 <nav id="slide-menu" class="slide-menu" role="navigation">
-	
+
 	<div class="brand">
 		<a href="/">
 			<img src="/assets/img/laravel-logo-white.png" height="50">
@@ -10,12 +10,12 @@
 	</div>
 
 	<ul class="slide-main-nav">
-		<li><a href="/">Home</a></li>
+		<li><a href="/">首頁</a></li>
 		@include('partials.main-nav')
 	</ul>
 
 	<div class="slide-docs-nav">
-		<h2>Documentation</h2>
+		<h2>文件</h2>
 		{!! $index !!}
 	</div>
 
