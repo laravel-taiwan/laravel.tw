@@ -318,12 +318,54 @@ table {
 td, th {
   padding: 0; }
 
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/woff/NotoSansCJKtc-Thin.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/woff/NotoSansCJKtc-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 350;
+  src: url("/assets/woff/NotoSansCJKtc-DemiLight.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/woff/NotoSansCJKtc-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/woff/NotoSansCJKtc-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/woff/NotoSansCJKtc-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: NotoSansCJKtc;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/woff/NotoSansCJKtc-Black.woff") format("woff"); }
+
 * {
   box-sizing: border-box; }
 
 body {
   color: #525252;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif, NotoSansCJKtc;
   font-size: 16px;
   background: #fff url('/assets/img/cloud-bar.png') repeat-x;
   padding-top: 10px;
