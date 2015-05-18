@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Laravel - 為網頁藝術家創造的 PHP 框架</title>
+	<title>{{ isset($title) ? $title . ' - ' : null }}Laravel - 為網頁藝術家創造的 PHP 框架</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="author" content="Taylor Otwell">
 	<meta name="description" content="Laravel - The PHP framework for web artisans.">
@@ -11,7 +11,6 @@
 	<!--[if lte IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/assets/css/laravel.css">
 </head>
 <body class="@yield('body-class', 'docs') language-php">
@@ -21,7 +20,7 @@
 	<nav class="main">
 		<div class="container">
 			<a href="/" class="brand">
-				<img src="/assets/img/laravel-logo.png" height="30">
+				<img src="/assets/img/laravel-logo.png" height="30" alt="Laravel logo">
 				Laravel
 			</a>
 
@@ -51,6 +50,7 @@
 	<script src="/assets/js/laravel.js"></script>
 	<script src="/assets/js/viewport-units-buggyfill.js"></script>
 	<script>window.viewportUnitsBuggyfill.init();</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -62,5 +62,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>

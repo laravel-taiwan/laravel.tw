@@ -2,6 +2,15 @@
 	padding: 25px 50px 50px;
 	margin-left: 300px;
 
+	ul {
+		font-size: 14.5px;
+	}
+
+	p {
+		font-size: 14.5px;
+		line-height: 1.65;
+	}
+
 	h1 + ul {
 		margin: 0;
 		padding: 0;
@@ -24,11 +33,18 @@
 		}
 	}
 
+	li > ul {
+		font-size: 15px;
+		font-weight: 400;
+		list-style: none;
+	}
+
 	h2 {
-		font-size: 36px;
+		font-size: 30px;
 		font-weight: 400;
 		position: relative;
-		a, a:hover {
+		a,
+		a:hover {
 			color: $color__gray;
 			text-decoration: none;
 		}
@@ -49,7 +65,7 @@
 	}
 
 	h4 {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 700;
 	}
 
@@ -68,7 +84,8 @@
 		border-collapse: collapse;
 		width: 100%;
 		font-size: 14px;
-		th, td {
+		th,
+		td {
 			border: 1px solid $color__lighter_gray;
 			padding: 10px;
 			text-align: left;
@@ -96,12 +113,12 @@
 }
 
 @media (max-width:780px) {
-	
+
 	.docs article {
 		margin-left: 0px;
 		h1 {
 			margin-top: 0;
 		}
-	}	
+	}
 
 }
