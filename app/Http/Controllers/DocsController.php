@@ -46,7 +46,9 @@ class DocsController extends Controller {
 
 		$content = $this->docs->get($version, $page ?: 'installation');
 
-		$title = (new Crawler($content))->filterXPath('//h1');
+		$crawler = new Crawler();
+		$crawler->addHTMLContent($content, 'UTF-8');
+		$title = $crawler->filterXPath('//h1');
 
 		$section = '';
 
