@@ -70,7 +70,7 @@ class Idea extends Eloquent {
 			<div class="block odd">
 				<div class="text">
 					<h2>簡潔明瞭，優美的語法。</h2>
-					<p>想要程式優雅、簡約，還擁有可讀性嗎？或許您將完美契合於此，因為 Laravel 專門設計給如同您一樣人們。如果您需要任何入門的幫助，請查閱 <a href="https://laracasts.com">Laracasts</a> 以及我們 <a href="/docs">優秀的文件</a>。</p>
+					<p>想要程式優雅、簡約，還擁有可讀性嗎？或許您將完美契合於此，因為 Laravel 專門設計給如同您一樣的人們。如果您需要任何入門的幫助，請查閱 <a href="https://laracasts.com">Laracasts</a> 以及我們 <a href="/docs">優秀的文件</a>。</p>
 				</div>
 				<div class="media">
 
