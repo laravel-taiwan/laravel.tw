@@ -25,6 +25,7 @@ deploy:
     - gulp --production
     - mkdir ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - cp -r . ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
+    - rm ${DEPLOY_WEBROOT_PATH}
     - ln -s ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
     - ln -s ${LARAVEL_DOC_PATH} ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/resources/docs
-    - chmod -R 777 ${DEPLOY_BUILD_PATH}/${BUILD_VERION}/storage
+    - chmod -R 777 ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/storage
