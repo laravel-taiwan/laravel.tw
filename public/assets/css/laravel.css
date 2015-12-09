@@ -361,7 +361,9 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   background: #fff url("/assets/img/cloud-bar.png") repeat-x;
-  padding-top: 10px;
+  padding-top: 10px; }
+
+h1, h2, h3, h4 {
   -webkit-font-smoothing: antialiased; }
 
 .container {
@@ -379,6 +381,8 @@ h1 {
 p {
   line-height: 1.5;
   margin: 10px 0 20px; }
+  p strong {
+    -webkit-font-smoothing: antialiased; }
 
 .contain {
   max-width: 880px;
@@ -1004,7 +1008,8 @@ tbody.collapse.in {
  */
 .docs article code[class*="language-"],
 .docs article pre[class*="language-"] {
-  font-size: 12px; }
+  font-size: 11px;
+  vertical-align: middle; }
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -1136,8 +1141,8 @@ pre.line-numbers > code {
 .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
-  top: -2px;
-  padding-top: 2px;
+  top: -4px;
+  padding-top: 0px;
   font-size: 100%;
   left: -3.8em;
   width: 3em;
@@ -1760,13 +1765,13 @@ nav.main {
   padding: 25px 125px 50px 50px;
   margin-left: 300px; }
   .docs article ul {
-    font-size: 16px; }
+    font-size: 14px; }
   .docs article .content-list ul li {
     margin: 8px;
     line-height: 1.65; }
   .docs article p {
-    font-size: 16px;
-    line-height: 1.65; }
+    font-size: 15px;
+    line-height: 1.70; }
   .docs article h1 + ul {
     margin: 0;
     padding: 0;
@@ -1775,7 +1780,8 @@ nav.main {
     font-weight: bold;
     line-height: 1.5;
     padding-bottom: 50px;
-    border-bottom: 1px solid #f0f2f1; }
+    border-bottom: 1px solid #f0f2f1;
+    -webkit-font-smoothing: antialiased; }
     .docs article h1 + ul li:before {
       content: "# ";
       margin-right: .25em;
@@ -1787,9 +1793,12 @@ nav.main {
     font-size: 15px;
     font-weight: 400;
     list-style: none; }
+  .docs article h2:first-of-type {
+    margin-top: 15px; }
   .docs article h2 {
     font-size: 30px;
     font-weight: 400;
+    margin-top: 55px;
     position: relative; }
     .docs article h2 a,
     .docs article h2 a:hover {
@@ -1805,10 +1814,12 @@ nav.main {
       opacity: .6; }
   .docs article h3 {
     font-size: 24px;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-top: 45px; }
   .docs article h4 {
     font-size: 16px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 35px; }
   .docs article a {
     text-decoration: underline; }
     .docs article a:hover {
@@ -1828,7 +1839,7 @@ nav.main {
       font-size: 16px; }
 
 .docs #search {
-  padding: 90px 50px 0px 50px;
+  padding: 60px 50px 0px 50px;
   margin-left: 300px; }
 
 .docs #search-wrapper {
@@ -1838,7 +1849,7 @@ nav.main {
   margin: 0 auto; }
   .docs #search-wrapper .icon {
     content: '';
-    background: url("../img/search_icon.png") center center no-repeat;
+    background: url("/assets/img/search_icon.png") center center no-repeat;
     position: absolute;
     right: 12px;
     top: 9px;
@@ -1848,12 +1859,12 @@ nav.main {
     z-index: 200; }
 
 #search-wrapper.not-empty .icon {
-  background: url("../img/cross_icon.png") center center no-repeat;
+  background: url("/assets/img/cross_icon.png") center center no-repeat;
   cursor: pointer; }
 
 #search-input {
   padding: 10px 16px;
-  border-radius: 20px;
+  border-radius: 3px;
   border: solid 1px #B3B5B4;
   width: 100%;
   z-index: 150; }
@@ -2035,7 +2046,7 @@ nav.main {
       margin-top: 0; }
   .docs #search {
     margin-left: 0px;
-    padding: 90px 50px 30px 50px; } }
+    padding: 60px 50px 30px 30px; } }
 
 body.the-404 .contain {
   padding: 50px 0;

@@ -37,9 +37,13 @@ $(function() {
 
   // gheading links
   $('.docs-wrapper').find('a[name]').each(function () {
-        var anchor = $('<a href="#' + this.name + '"/>');
-        $(this).parent().next('h2').wrapInner(anchor);
-    });
+    var anchor = $('<a href="#' + this.name + '"/>');
+    $(this).parent().next('h2').wrapInner(anchor);
+  });
+
+  Mousetrap.bind('/', function(e) {
+    $('#search-input').focus();
+  }, 'keyup');
 
   initAlgoliaSearch();
 
@@ -108,7 +112,7 @@ $(function() {
     });
 
     $('#cross').click(function() {
-      typeahead.val('').keyup();
+      typeahead.typeahead('val', '').keyup();
       $article.css('opacity', '1');
     });
   }
