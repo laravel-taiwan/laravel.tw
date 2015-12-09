@@ -5,8 +5,10 @@ stages:
 before_script:
   - echo 'Initial Setup'
   - cp .env.production .env
+  - echo "APP_KEY=${LARAVEL_APP_KEY}" >> .env
   - composer install --prefer-dist --no-interaction > /dev/null
   - npm install
+  - export BUILD_VERSION=`date +Y%m%d.%s`
 
 test:
   stage: test
@@ -20,3 +22,9 @@ deploy:
     - master
   script:
     - echo 'Build Application'
+    - gulp --production
+    - mkdir ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
+    - cp -r . ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
+    - chmod -R 777 storage
+    - chmod -R 777 bootstrap/cache
+    - ln -s ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
