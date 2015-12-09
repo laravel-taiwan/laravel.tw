@@ -1,0 +1,22 @@
+stages:
+  - test
+  - deploy
+
+before_script:
+  - echo 'Initial Setup'
+  - cp .env.production .env
+  - composer install --prefer-dist --no-interaction > /dev/null
+  - npm install
+
+test:
+  stage: test
+  script:
+    - echo 'Running PHP unit test'
+    - php vendor/bin/phpunit --debug
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - echo 'Build Application'
