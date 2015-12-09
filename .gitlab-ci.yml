@@ -23,7 +23,8 @@ deploy:
   script:
     - echo 'Build Application'
     - gulp --production
-    - chmod -R 777 storage
     - mkdir ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - cp -r . ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - ln -s ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
+    - ln -s ${LARAVEL_DOC_PATH} ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/resources/docs
+    - chmod -R 777 ${DEPLOY_BUILD_PATH}/${BUILD_VERION}/storage
