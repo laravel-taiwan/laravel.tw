@@ -26,5 +26,4 @@ deploy:
     - mkdir ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - cp -r . ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - chmod -R 777 storage
-    - chmod -R 777 bootstrap/cache
     - ln -s ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
