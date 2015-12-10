@@ -25,8 +25,8 @@ deploy:
     - gulp --production
     - mkdir ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
     - cp -r . ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}
-    - rm ${DEPLOY_WEBROOT_PATH}
-    - ln -s ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
-    - ln -s ${LARAVEL_DOC_PATH} ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/resources/docs
+    - unlink ${DEPLOY_WEBROOT_PATH}
+    - ln -sf ${DEPLOY_BUILD_PATH}/${BUILD_VERSION} ${DEPLOY_WEBROOT_PATH}
+    - ln -sf ${LARAVEL_DOC_PATH} ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/resources/docs
     - chmod -R 777 ${DEPLOY_BUILD_PATH}/${BUILD_VERSION}/storage
-    - sudo /etc/init.d/php5-fpm restart
+    - sudo service php5-fpm restart
