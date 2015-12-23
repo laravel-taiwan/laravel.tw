@@ -7,6 +7,8 @@ before_script:
   - cp .env.production .env
   - echo "APP_KEY=${LARAVEL_APP_KEY}" >> .env
   - composer install --prefer-dist --no-interaction > /dev/null
+  - . ~/.nvm/nvm.sh
+  - nvm use 4
   - npm install
   - export BUILD_VERSION=`date +%Y%m%d.%s`
 
