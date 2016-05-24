@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,200italic,400italic,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -237,7 +237,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -1009,6 +1010,7 @@ tbody.collapse.in {
 .docs article code[class*="language-"],
 .docs article pre[class*="language-"] {
   font-size: 11px;
+  line-height: 2.0;
   vertical-align: middle; }
 
 code[class*="language-"],
@@ -1336,8 +1338,7 @@ pre.line-numbers > code {
   font-size: 16px; }
   .btn .faint {
     color: rgba(255, 255, 255, 0.5); }
-  .btn:hover,
-  .btn:active {
+  .btn:hover, .btn:active {
     background: #e74430;
     color: #fff; }
 
@@ -1475,6 +1476,9 @@ nav.main {
     color: #aeaeae; }
   .panel.dark {
     background-color: #f0f2f1; }
+  .panel.standout {
+    background-color: #f4645f;
+    color: #fff; }
   .panel.statement {
     display: table;
     table-layout: fixed;
@@ -1502,6 +1506,38 @@ nav.main {
       margin: 8vh auto 15px; }
     .panel.statement .next-up {
       bottom: 150px; }
+  .panel.laracon {
+    background: #f4645f url("/assets/img/laracon-bg.jpg") center center no-repeat;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 5; }
+    .panel.laracon > h1 {
+      color: #fff;
+      margin: 0 0 30px 0;
+      text-align: center; }
+    .panel.laracon h2 {
+      font-weight: 400;
+      margin: 40px 0; }
+    .panel.laracon .date {
+      font-size: 16px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      font-weight: 400; }
+    .panel.laracon .btn {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 60px;
+      color: #f4645f;
+      margin: 10px;
+      width: 260px;
+      font-size: 18px; }
+      .panel.laracon .btn:hover {
+        background: #fff; }
+      .panel.laracon .btn em {
+        font-size: 24px;
+        display: block;
+        font-style: normal; }
   .panel.features {
     padding: 125px 0; }
     .panel.features > h1,
@@ -1619,9 +1655,9 @@ nav.main {
   .panel .browser-window,
   .panel .terminal-window {
     overflow: hidden; }
-    .panel .browser-window pre[class*="language-"],
-    .panel .browser-window .window-content,
-    .panel .terminal-window pre[class*="language-"], .panel .terminal-window .window-content {
+    .panel .browser-window pre[class*="language-"], .panel .browser-window .window-content,
+    .panel .terminal-window pre[class*="language-"],
+    .panel .terminal-window .window-content {
       overflow: hidden; }
 
 @media (max-width: 980px) {
@@ -1770,7 +1806,7 @@ nav.main {
     margin: 8px;
     line-height: 1.65; }
   .docs article p {
-    font-size: 15px;
+    font-size: 14.5px;
     line-height: 1.70; }
   .docs article h1 + ul {
     margin: 0;

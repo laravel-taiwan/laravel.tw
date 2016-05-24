@@ -37,7 +37,8 @@ home
 &lt;?php
 
 
-class Idea extends Eloquent {
+class Idea extends Eloquent
+{
 
 	/**
 	 * Dreaming of something more?
@@ -63,6 +64,13 @@ class Idea extends Eloquent {
 	</a>
 </section>
 
+<section class="panel laracon standout" id="laracon">
+    <object type="image/svg+xml" data="/assets/img/laracon-16.svg" width="350"></object>
+    <h2>This year Laracon goes <strong>bigger than ever</strong>. Early Bird tickets available for a limited time.</h2>
+    <a href="http://laracon.us" class="btn"><em>Laracon US</em>Louisville, Kentucky</a>
+    <a href="http://laracon.eu" class="btn"><em>Laracon EU</em>Amsterdam, Netherlands</a>
+</section>
+
 <section class="panel features dark" id="features">
 	<h1>速度很快嗎？</h1>
 	<p>傳遞優雅的應用程式只需要一瞬間</p>
@@ -84,7 +92,8 @@ class Idea extends Eloquent {
 						</div>
 						<div class='window-content'>
 							<pre class="line-numbers"><code class="language-php">
-class Purchase implements ShouldQueue {
+class Purchase implements ShouldQueue
+{
 
 	/**
 	 * Purchase a new podcast.
@@ -173,7 +182,7 @@ Route::get('/user/{user}', function(App\User $user)
 				<a href="https://forge.laravel.com">
 					<img src="/assets/img/forge-logo.png" alt="Forge">
 				</a>
-				<p>瞬間將 PHP 發佈在 Linode、DigitalOcean 或其他平台上。一次擁有推送部署、PHP 5.6、HHVM、隊列，以及任何您打造驚人的 Laravel 應用程式所需之一切。</p>
+				<p>瞬間將 PHP 發佈在 Linode、DigitalOcean 或其他平台上。一次擁有推送部署、PHP 7.0、HHVM、隊列，以及任何您打造驚人的 Laravel 應用程式所需之一切。</p>
 				<p>在幾分鐘內啟動您的應用程式！</p>
 			</div>
 		</div>
