@@ -1,8 +1,6 @@
 @extends('app')
 
-@section('body-class')
-home
-@endsection
+@section('body-class', 'home')
 
 @section('content')
 
@@ -20,20 +18,18 @@ home
 
 </nav>
 
-<section class="panel statement light">
-	<div class="content">
-		<h1>喜歡優美的程式碼？我們也是。</h1>
-		<p>為網頁藝術家創造的 PHP 框架</p>
-		<div class='browser-window'>
-			<div class='top-bar'>
-				<div class='circles'>
-					<div class="circle circle-red"></div>
-					<div class="circle circle-yellow"></div>
-					<div class="circle circle-green"></div>
-				</div>
-			</div>
-			<div class='window-content'>
-				<pre class="line-numbers"><code class="language-php">
+<section class="hero">
+	<div class="container">
+
+        <div class="content">
+            <h1>喜歡優美的程式碼？我們也是。</h1>
+            <p>為網頁藝術家創造的 PHP 框架</p>
+        </div>
+
+        @include('partials/browser')
+
+        <div class="macbook">
+<pre class="line-numbers"><code class="language-php">
 &lt;?php
 
 
@@ -50,30 +46,50 @@ class Idea extends Eloquent
 	 	// Have a fresh start...
 	 }
 
-}
+}</code></pre>
+            {!! svg('macbook') !!}
+        </div>
 
-	</code></pre>
-				</div>
-			</div>
+        <div class="callout rule">
+            <span class="text">See What's New In 5.3!</span>
+        </div>
 
-		</div>
+        <div class="callouts">
+            <a href="/docs/scout" class="callout minimal third">
+                <div class="callout-head">
+                    <div class="callout-title">Laravel Scout</div>
+                    <div class="callout-icon">{!! svg('scout')!!}</div>
+                </div>
+                <p>Driver based full-text search for Eloquent, complete with pagination and automatic indexing.</p>
+            </a>
+            <a href="/docs/broadcasting" class="callout minimal third">
+                <div class="callout-head">
+                    <div class="callout-title">Laravel Echo</div>
+                    <div class="callout-icon">{!! svg('echo')!!}</div>
+                </div>
+                <p>Event broadcasting, evolved. Bring the power of WebSockets to your application without the complexity.</p>
+            </a>
+            <a href="/docs/passport" class="callout minimal third">
+                <div class="callout-head">
+                    <div class="callout-title">Laravel Passport</div>
+                    <div class="callout-icon">{!! svg('passport')!!}</div>
+                </div>
+                <p>API authentication without the headache. Passport is an OAuth2 server that's ready in minutes.</p>
+            </a>
+        </div>
 	</div>
-	<a href="#features" class="next-up">
-		強大，現代化的功能
-		<img src="/assets/img/down-arrow.png">
-	</a>
 </section>
 
-<section class="panel laracon standout" id="laracon">
+{{-- <section class="panel laracon standout" id="laracon">
     <object type="image/svg+xml" data="/assets/img/laracon-16.svg" width="350"></object>
     <h2>This year Laracon goes <strong>bigger than ever</strong>. Early Bird tickets available for a limited time.</h2>
     <a href="http://laracon.us" class="btn"><em>Laracon US</em>Louisville, Kentucky</a>
     <a href="http://laracon.eu" class="btn"><em>Laracon EU</em>Amsterdam, Netherlands</a>
-</section>
+</section> --}}
 
 <section class="panel features dark" id="features">
-	<h1>速度很快嗎？</h1>
-	<p>傳遞優雅的應用程式只需要一瞬間</p>
+	<h1>快速開發?</h1>
+	<p class="intro">傳遞優雅的應用程式只需要一瞬間</p>
 		<div class="blocks stacked">
 			<div class="block odd">
 				<div class="text">
@@ -166,39 +182,104 @@ Route::get('/user/{user}', function(App\User $user)
 				</div>
 			</div><!-- /.block -->
 		</div>
-		<a href="#ecosystem" class="next-up">
-			Laravel 生態系統
-			<img src="/assets/img/down-arrow.png">
-		</a>
 	</section>
 
 	<section class="panel ecosystem light" id="ecosystem">
 		<h1>Laravel 生態系統</h1>
-		<p>徹底改變您建立網站的方式。</p>
+		<p class="intro">徹底改變您建立網站的方式。</p>
 
-		<div class="forge contain">
-			<img src="/assets/img/forge-macbook.png" alt="Forge Dashboard" class="screenshot">
-			<div class="content">
-				<a href="https://forge.laravel.com">
-					<img src="/assets/img/forge-logo.png" alt="Forge">
-				</a>
-				<p>瞬間將 PHP 發佈在 Linode、DigitalOcean 或其他平台上。一次擁有推送部署、PHP 7.0、HHVM、隊列，以及任何您打造驚人的 Laravel 應用程式所需之一切。</p>
-				<p>在幾分鐘內啟動您的應用程式！</p>
-			</div>
-		</div>
-		<div class="tiles">
-			<div class="tile">
-				<h2><a href="/docs/homestead">Homestead</a></h2>
-				<p>Laravel 官方的本機開發環境。由 Vagrant 技術支援，透過 Homestead 讓您的整個團隊開發環境一致，同步使用最新版本的 PHP、MySQL、Postgres、Redis，及其他軟體。</p>
-			</div>
-			<div class="tile">
-				<h2><a href="https://laracasts.com">Laracasts</a></h2>
-				<p>數百部（是的，數百部）的 Laravel 及 PHP 影片教學，而且每週都會有新的影片加入！您可以瀏覽基礎的部分，或是開始精通 Laravel 的旅程。價格就如同您所有午餐的預算。</p>
-			</div>
-			<div class="tile">
-				<h2>Power Packed</h2>
-				<p>雖然 Laravel 現成可用且令人驚艷，但是還有更多值得探索的功能！例如使用<a href="/docs/billing">交易</a>讓處理訂閱計費的問題輕而易舉，或是使用<a href="/docs/authentication#social-authentication">社群驗證</a>來驗證 Facebook、Twitter，以及其他的社群帳號。</p>
-			</div>
-		</div>
+        <div class="container">
+    		<a href="https://forge.laravel.com" class="callout full forge">
+    			<div class="content">
+					{!! svg('forge') !!}
+					<p>瞬間將 PHP 發佈在 Linode、DigitalOcean 或其他平台上。一次擁有推送部署、PHP 7.0、HHVM、隊列，以及任何您打造驚人的 Laravel 應用程式所需之一切。</p>
+					<p>在幾分鐘內啟動您的應用程式！</p>
+    			</div>
+                <img src="https://forge.laravel.com/images/ui-preview.png" alt="Forge UI Preview" height="350" />
+    		</a>
+            <div class="callouts">
+                <a class="third callout pop" href="/docs/homestead">
+                    <div class="callout-head">
+                        <div class="callout-title">Homestead</div>
+                        <div class="callout-icon">{!! svg('h') !!}</div>
+                    </div>
+                    <div class="callout-body">
+						<p>Laravel 官方的本機開發環境。由 Vagrant 技術支援，透過 Homestead 讓您的整個團隊開發環境一致，同步使用最新版本的 PHP、MySQL、Postgres、Redis，及其他軟體。</p>
+                    </div>
+                </a>
+                <a class="third callout pop teal" href="https://laracasts.com">
+                    <div class="callout-head">
+                        <div class="callout-title">Laracasts</div>
+                        <div class="callout-icon">{!! svg('play') !!}</div>
+                    </div>
+                    <div class="callout-body">
+						<p>數百部（是的，數百部）的 Laravel 及 PHP 影片教學，而且每週都會有新的影片加入！您可以瀏覽基礎的部分，或是開始精通 Laravel 的旅程。價格就如同您所有午餐的預算。</p>
+                    </div>
+                </a>
+                <a class="third callout pop" href="/docs/billing">
+                    <div class="callout-head">
+                        <div class="callout-title">Laravel Cashier</div>
+                        <div class="callout-icon">{!! svg('cashier') !!}</div>
+                    </div>
+                    <div class="callout-body">
+                        <p>Make subscription billing painless with built-in Stripe and Braintree integrations. Coupons, swapping subscriptions, cancellations, and even PDF invoices are ready out of the box.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="callout rule">
+                <span class="text">And so much more!</span>
+            </div>
+            <div class="packages">
+                <div class="third">
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="/docs/valet" class="package-title">Valet</a>
+                            <p>A Laravel development environment for Mac minimalists. No Vagrant, no Apache, no fuss.</p>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="https://github.com/laravel/socialite" class="package-title">Socialite</a>
+                            <p>OAuth authentication with Facebook, Twitter, Google, LinkedIn, GitHub, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="/docs/elixir" class="package-title">Elixir</a>
+                            <!-- <p>If you've ever been frustrated with Gulp and asset compilation, Elixir is for you.</p> -->
+                            <p>Laravel Elixir makes front-end a breeze. Start using SASS and Webpack in minutes.</p>
+                        </div>
+                    </div>
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="https://spark.laravel.com" class="package-title">Spark</a>
+                            <p>Powerful SaaS application scaffolding. Stop writing boilerplate & focus your application.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="package">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="https://lumen.laravel.com" class="package-title">Lumen</a>
+                            <p>If all you need is an API and lightning fast speed, try Lumen. It’s Laravel super-light.</p>
+                        </div>
+                    </div>
+                    <div class="package last">
+                        <div class="icon">{!! svg('package') !!}</div>
+                        <div class="content">
+                            <a href="https://statamic.com" class="package-title">Statamic</a>
+                            <p>Need a CMS that runs on Laravel and is built for developers <em>and</em> clients? Look no further. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</section>
 @endsection

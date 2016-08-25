@@ -108,46 +108,37 @@
 			font-size: 16px;
 		}
 	}
+
+    blockquote {}
 }
 
-.docs #search {
-	padding: 60px 50px 0px 50px;
-	margin-left: 300px;
+.docs blockquote.has-icon {
+    position: relative;
+
+    &.video, &.laracast {
+        background: rgba(103, 58, 183, 0.62);
+    }
+
+    &.tip {
+        background: #64B5F6;
+    }
+
+    p { padding-left: 40px; }
+
+    .flag {
+        position: absolute;
+        width: 30px;
+        left: 15px;
+        top: 10px;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
 
-.docs #search-wrapper {
-	text-align: center;
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-
-	.icon {
-		content: '';
-		background: url("/assets/img/search_icon.png") center center no-repeat;
-		position: absolute;
-		right: 12px;
-		top: 9px;
-		width: 24px;
-		height: 24px;
-		display: block;
-		z-index: 200;
-	}
-}
-
-#search-wrapper.not-empty {
-	.icon {
-		background: url("/assets/img/cross_icon.png") center center no-repeat;
-		cursor: pointer;
-	}
-
-}
-
-#search-input {
-	padding: 10px 16px;
-	border-radius: 3px;
-	border: solid 1px #B3B5B4;
-	width: 100%;
-	z-index: 150;
+.docs .svg svg {
+    width: 24px;
 }
 
 .autocomplete-wrapper .h1 {
@@ -196,21 +187,18 @@
 	outline: none;
 }
 
-.twitter-typeahead .tt-input:focus {
-	border: 2px solid #0097CF;
-}
-
 .twitter-typeahead .tt-hint {
 	color: #999;
 }
 
 .twitter-typeahead .tt-dropdown-menu {
-	margin-top: -20px;
+	margin: 21px 0 0 0;
 	width: 100%;
+    left: -61px !important;
 	padding: 0;
-	background-color: #FFF;
-	border: solid 1px #FFD6D6;
-	border-top: 0px;
+	background-color: #fff;
+	border: solid 1px $color__lighter_gray;
+	border-top: solid 1px $color__lighter_gray;
 	border-bottom: 0px;
 	border-radius: 0 0 2px 2px;
 }
@@ -220,7 +208,7 @@
 }
 
 .twitter-typeahead .tt-dropdown-menu .footer {
-	border-bottom: solid 1px #FFD6D6 !important;
+	border-bottom: solid 1px $color__lighter_gray !important;
 }
 
 .twitter-typeahead .tt-dropdown-menu .autocomplete-wrapper {
@@ -347,8 +335,6 @@
 	overflow: hidden;
 }
 
-
-
 @media (max-width:1080px) {
 
 	.docs article {
@@ -358,12 +344,12 @@
 			margin-left: -20px;
 		}
 	}
+}
 
-	.docs #search
-	{
-		margin-left: 200px;
-	}
-
+@media (max-width: 1050px) {
+    .twitter-typeahead .tt-dropdown-menu {
+        left: -36px !important;
+    }
 }
 
 @media (max-width:780px) {
@@ -374,11 +360,10 @@
 			margin-top: 0;
 		}
 	}
+}
 
-	.docs #search
-	{
-		margin-left: 0px;
-		padding: 60px 50px 30px 30px;
-	}
-
+@media (max-width: 660px) {
+    .twitter-typeahead .tt-dropdown-menu {
+        left: -16px !important;
+    }
 }
